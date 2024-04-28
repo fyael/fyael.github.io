@@ -58,8 +58,8 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">April 25, 2017</span>
-									<h2><a href="#">RESEARCHERS<br />
-										PARTICIPATING</a></h2>
+									<h2>RESEARCHERS<br />
+										PARTICIPATING</h2>
 								<!--
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
@@ -74,13 +74,28 @@
 								<article>
 									<header>
 										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
+										<h2><a href="#">Dr. Adrián Pastor<br /> <!-- (Sugerencia)Podriamos usar la etiqueta de liga par direccioar GScholar u otro-->
+											López Monroy.</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<img src="images/pic02.jpg" alt="Dr. Adrián Pastor López Monroy." />
+									<p>Director Associate Professor at CIMAT-Gto</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
+										<button onclick="myFunction()">READ MORE</button>
+
+										<div id="myDIV">Dr. Adrián Pastor López Monroy received his Master's and Doctor's degrees in 
+											Computer Science from the Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE, Mexico) in 2012 and 2017, 
+											respectively. In 2017, he received the award for the best doctoral thesis in Artificial Intelligence (AI) 
+											from the Mexican Society of AI. Subsequently, in 2017 and 2018, he was a Full-Time Associate Researcher and Lecturer at the 
+											University of Houston, in Texas, USA. Currently, Dr. López Monroy is a Full-Time Research Professor in the Department of Computer 
+											Science at the Centro de Investigación en Matemáticas (CIMAT, Mexico). His research areas are Deep Learning for Natural Language 
+											Processing, and since 2013 he has led participations in machine learning competitions in the European forums 
+											"Conference and Labs of the Evaluation Forum CLEF-PAN" and in the "Iberian Language Evaluation Forum IberLEF", 
+											winning first place in various editions in Spain, England, France and Greece. 
+											He is a member of the Sistema Nacional de Investigadores (SNI) and CONAHCyT in groups for artificial intelligence 
+											(e.g., Alianza-IA, RedICA), 
+											and language technologies (RedTTL). He currently has more than 60 refereed publications in journals, 
+											conferences and book chapters, as well as more than 1300 citations and an H-index of 19 on Google Scholar.</div> 
 									</ul>
 								</article>
 								<article>
@@ -226,6 +241,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myDIV");
+						if (x.style.display === "none") {
+							x.style.display = "block";
+						} else {
+							x.style.display = "none";
+						}
+					} 
+			</script>
 
 	</body>
 </html>
