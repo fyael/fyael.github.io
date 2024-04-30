@@ -3758,9 +3758,7 @@ input, select, textarea {
 						#nav ul.links li.contact a:hover {
 							color: #18bfef !important;
 						}
-						#nav ul.links li.people{
-							transition: width 2s, height 2s, transform 2s;
-						}
+						
 
 		#nav ul.icons {
 			-moz-flex-grow: 0;
