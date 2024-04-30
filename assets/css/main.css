@@ -72,6 +72,20 @@ input, select, textarea {
 	appearance: none;
 }
 
+.actions special {
+	text-align: center; /* Centrar los elementos dentro del contenedor */
+  }
+  
+  .actions special button {
+	margin-bottom: 10px; /* Añadir un margen inferior al botón */
+  }
+  
+  #myDIV {
+	display: block; /* Asegurar que el div se comporte como un bloque */
+	margin-top: 0; /* Eliminar el margen superior por defecto */
+  }
+  
+
 /* Basic */
 
 	@-ms-viewport {
@@ -187,6 +201,7 @@ input, select, textarea {
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
+		
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2660,6 +2675,7 @@ input, select, textarea {
 
 	a.image {
 		overflow: hidden;
+		border-radius: 15px;
 	}
 
 		a.image img {
@@ -2907,9 +2923,12 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	  
+
 	header {
 		cursor: default;
 	}
+	
 
 		header > .date {
 			display: block;
@@ -2921,6 +2940,7 @@ input, select, textarea {
 
 		header > p {
 			font-style: italic;
+			
 		}
 
 		header > h1 + p {
@@ -3207,7 +3227,7 @@ input, select, textarea {
 				border-left-color: #18bfef;
 			}
 
-		.pagination a.active {
+		.pagination a.people {
 			background-color: #eeeeee;
 		}
 
@@ -3698,6 +3718,8 @@ input, select, textarea {
 			margin-bottom: 0;
 			padding-left: 0;
 			text-transform: uppercase;
+			
+
 		}
 
 			#nav ul.links li {
@@ -3721,16 +3743,23 @@ input, select, textarea {
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
-				#nav ul.links li.active {
-					background-color: #ffffff;
-				}
+				
 
-					#nav ul.links li.active a {
-						color: #1e252d;
+					#nav ul.links li.people a {
+						color: #ffffff;
 					}
 
-						#nav ul.links li.active a:hover {
+						#nav ul.links li.people a:hover {
 							color: #18bfef !important;
+						}
+						#nav ul.links li.publications a:hover {
+							color: #18bfef !important;
+						}
+						#nav ul.links li.contact a:hover {
+							color: #18bfef !important;
+						}
+						#nav ul.links li.people{
+							transition: width 2s, height 2s, transform 2s;
 						}
 
 		#nav ul.icons {
@@ -4177,7 +4206,7 @@ input, select, textarea {
 					border-left-color: #18bfef;
 				}
 
-			#footer .pagination a.active {
+			#footer .pagination a.people {
 				background-color: #e2e2e2;
 			}
 
@@ -4687,3 +4716,4 @@ input, select, textarea {
 		}
 
 	}
+
