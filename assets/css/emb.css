@@ -15,16 +15,28 @@
   flex: 1 0 33.33%;
   margin: 10px;
   height: 500px;
+  order: 1;
 }
 
 .child2 {
   flex: 1 0 33.33%;
   margin: 10px;
   height: 500px;
+  width: 90%
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 3 
 }
+
+.child3 {
+  flex: 1 0 33.33%;
+  margin: 10px 0 10px 20px; 
+  height: 500px;
+  order: 2;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -34,5 +46,6 @@
 
   #inner {
     flex-direction: column;
+
   }
 }
